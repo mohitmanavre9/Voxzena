@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --color-bg-card: #151722;
+}
+
+@layer utilities {
+  .neu-flat {
+    background: var(--color-bg-card);
+    box-shadow: 6px 6px 12px #08090d, -6px -6px 12px #222537;
+  }
+  .neu-pressed {
+    background: var(--color-bg-card);
+    box-shadow: inset 6px 6px 12px #08090d, inset -6px -6px 12px #222537;
+  }
+  .neu-convex {
+    background: linear-gradient(145deg, #161924, #12141e);
+    box-shadow: 8px 8px 16px #08090d, -8px -8px 16px #222537;
+  }
+  .glass-panel {
+    background: rgba(21, 23, 34, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .glass-neu {
+    background: rgba(21, 23, 34, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 8px 8px 24px rgba(0,0,0,0.4), -4px -4px 16px rgba(255,255,255,0.02);
+  }
+  .text-glow-cyan {
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.6);
+  }
+  .text-glow-pink {
+    text-shadow: 0 0 15px rgba(255, 0, 127, 0.6);
+  }
+}
